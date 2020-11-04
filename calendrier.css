@@ -1,0 +1,118 @@
+body{
+  margin: 0px;
+  display: flex;
+  font-size: 2vh;
+}
+
+#mainCalContent{
+	padding-left: 2vw;
+	padding-right: 2vw;	
+}
+#mainCalHeader input{
+	height: 6vh;
+}
+input{
+	margin:1vh 1vw 1vh 0vw;
+}
+
+/*general tables properties*/
+table{border-collapse: collapse;}
+
+/*tableDay properties*/
+#titleTableDayLine{
+	height: 8vh;
+	padding-left: 8vw;
+}
+.hourCell{
+	width: 8vw;
+	text-align: right;
+	padding-right: 1vw;
+}
+.eventCell{
+	border: 1px solid lightgrey;
+	width: 100vw;
+	height: 8vh;
+	vertical-align: top;	
+}
+.fullDayEventCell{
+	height: 8vh;
+	border: 1px solid black;
+}
+/*tableWeek properties*/
+#titleTableWeekLine{
+	height: 8vh;
+}
+/*tableMonth properties*/
+#tableMonth{
+	width: 100%;
+}
+.tableMonthLine{
+	height: 17vh;
+}
+.titleTableMonthCell{
+	text-align: left;
+	padding-bottom: 1vh;
+}
+
+/*popup properties*/
+/* Popup container*/
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.formEvent{
+  visibility: hidden;
+  width: 40vw;
+  height: 50vh;
+  background-color: white;
+  border: 1px solid rgba(150,220,240,1);
+  text-align: center;
+  position: absolute;
+  left:30vw;
+  top:25vh;
+  z-index: 1;
+  text-align: left;
+  padding: 2vh 2vw 2vh 2vw;
+  display:flow;
+}
+
+/* Popup arrow
+.formEvent::after {
+  content: "";
+  position: absolute;
+  left: 32vw;
+  top: 20%;
+  margin-left: -2vw;
+  border-width: 2vw;
+  border-style: solid;
+  border-color: transparent transparent transparent rgba(150,220,240,1);
+}
+
+/* Toggle this class - hide and show the popup */
+.show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+*/
+.maintenant{visibility: visible;}
